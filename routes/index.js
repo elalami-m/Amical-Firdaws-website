@@ -10,11 +10,9 @@ var data = {
 };
 router.get("/", function (req, res, next) {
   res.render("index", data);
-  next();
 });
 router.get("/about", (req, res, next) => {
   res.render("about", data);
-  next();
 });
 router.get("/contact", (req, res, next) => {
   res.render("contact", data);
